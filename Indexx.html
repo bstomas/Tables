@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css"/>
     <title>Table</title>
 </head>
 <body>
@@ -13,12 +14,12 @@
       </caption>
       <thead>
         <tr>
-            <th scope="col"> Item</th>
-            <th scope="col"> Availability</th>
-            <th scope="col"> Quantity</th>
-            <th scope="col"> Price</th>
-        </th>
+            <th scope="col" colspan="2">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+        </tr>
       </thead>
+      <tbody>
         <tr>
           <td>Don&#8217;t Make Me Think by Steve Krug</td>
           <td>In Stock</td>
@@ -42,7 +43,18 @@
           <td>In Stock</td>
           <td>1</td>
           <td>$30.17</td>
+          <td colspan="3">Subtotal</td>
+          <td>$135.36</td>
         </tr>
+        <tr>
+          <td colspan="3">Tax</td>
+          <td>$13.54</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>$148.90</td>
+        </tr>
+      </tbody>
     </table>
 </body>
 </html>
